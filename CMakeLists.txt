@@ -32,8 +32,7 @@ file(GLOB_RECURSE SOURCE_FILES src/*.cpp)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
 # linked to the library
-target_include_directories(${PROJECT_NAME} PRIVATE ${LIBTESSERACT_INCLUDE_DIRS})
-target_include_directories(${PROJECT_NAME} PRIVATE ${LIBLEPTONICA_INCLUDE_DIRS})
+target_include_directories(${PROJECT_NAME} PRIVATE ${INCLUDE_DIRS})
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
 # linked to the libraries
