@@ -20,6 +20,7 @@ set(INCLUDE_DIRS ${INClUDE_DIRS} $ENV{HOME}/.local/include)
 
 # to include cpp connecor directory
 include_directories(${CMAKE_SOURCE_DIR}/include/)
+include_directories(${INCLUDE_DIRS})
 
 
 #to include cpp runtime
