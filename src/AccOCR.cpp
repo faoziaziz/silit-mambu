@@ -43,6 +43,6 @@ string AccOCR(){
     cout<<"(.)(.)====>>"<<endl;
     cout << outText << endl;
     return outText;
-    delete [] outText;
+    //delete [] outText;
 
 }
