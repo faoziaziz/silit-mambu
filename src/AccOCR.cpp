@@ -30,6 +30,9 @@ string AccOCR(){
     // Resize of image file
     resize(im, om, Size(im.cols*3, im.rows*3), 0, 0, INTER_AREA);
 
+    /* use gaussian blur to enhance image */
+    GaussianBlur(om, om, Size(5,5), 0);
+
     // adaptive threshold
     //adaptiveThreshold(im, thress, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 3, 5);
 
