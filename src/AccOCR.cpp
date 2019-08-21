@@ -5,7 +5,7 @@ string AccOCR(){
     /*
       String out text variable tesseract.
     */
-    sting outText;
+    string outText;
     string imPath = "outfile_temp.png";
     Mat om;
 
