@@ -28,6 +28,9 @@ include_directories(${INCLUDE_DIRS})
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 link_directories($ENV{HOME}/.local/lib64)
 link_directories($ENV{HOME}/.local/lib)
+link_directories(/usr/lib)
+
+
 file(GLOB_RECURSE SOURCE_FILES src/*.cpp)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 

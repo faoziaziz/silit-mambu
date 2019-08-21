@@ -5,6 +5,7 @@
 string translText(string input){
 
     /* Replace old format date to new format date */
+    string translated;
 
 
 
