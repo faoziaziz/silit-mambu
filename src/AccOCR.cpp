@@ -1,11 +1,11 @@
 #include "main.hpp"
 
-char* AccOCR(){
+string AccOCR(){
 
     /*
       String out text variable tesseract.
     */
-    string outText;
+    sting outText;
     string imPath = "outfile_temp.png";
     Mat om;
 

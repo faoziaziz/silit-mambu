@@ -59,7 +59,7 @@ void writeTexttoTable();
 
 /* Some function to support *****************/
 int getStatus(int refsn_image, int refsn_text);
-char* AccOCR();
+string AccOCR();
 //for license function
 string license();
 

@@ -136,8 +136,8 @@ void writeTexttoTable(){
         cout<<"RefSN : "<<RefSNImage<<endl;
         cout<<"ending of getting blob"<<endl;
         /* Translated using OCR************************************************/
-        OCR_get=AccOCR();
-        str_ocr_get=OCR_get;
+        //OCR_get=AccOCR();
+        str_ocr_get=AccOCR();
         cout<<"STR ocr"<<str_ocr_get<<endl;
         delete[] OCR_get;
         /* Delete File ********************************************************/
