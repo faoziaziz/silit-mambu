@@ -25,7 +25,7 @@ void restore_flag_OCR(){
 
       cout<<"Write to text table "<<endl;
       driver = get_driver_instance();
-      con = driver->connect("tcp://127.0.0.1:3306", "tappingapk", "trumon123!");
+      con = driver->connect("tcp://127.0.0.1:3306", "root", "trumon1234!@#$");
       con->setSchema("Trumon");
 
       /***********************************************************************/
@@ -94,8 +94,8 @@ void writeTexttoTable(){
 
     cout<<"Write to text table "<<endl;
     driver = get_driver_instance();
-    con = driver->connect("tcp://127.0.0.1:3306", "root", "trumon123");
-    con->setSchema("Trumon");
+    con = driver->connect("tcp://127.0.0.1:3306", "root", "trumon1234!@#$");
+    con->setSchema("trumon");
 
     /***********************************************************************/
     /* Select in ascending order ********************************************/
@@ -108,7 +108,7 @@ void writeTexttoTable(){
       string DeviceId = res->getString("DeviceId");
       Get_Flag=res->getInt("Flag");
       RefSNImage=res->getInt("RefSN");
-      if((Get_Flag==0)&&((DeviceId=="SMT09160030")||(DeviceId=="SMT09160030"))){
+      if((Get_Flag==0)){
         /* RefSN is some getting on line. ************************************/
         cout<<"REFSN Image : "<<RefSNImage<<endl;
         /* Get blob image *****************************************************/
