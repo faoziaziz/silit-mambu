@@ -25,10 +25,11 @@ include_directories(${INCLUDE_DIRS})
 
 #to include cpp runtime
 # link_directories(/usr/lib) # in the case of linked directory should be done
+link_directories(/usr/lib)
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 link_directories($ENV{HOME}/.local/lib64)
 link_directories($ENV{HOME}/.local/lib)
-link_directories(/usr/lib)
+
 
 
 file(GLOB_RECURSE SOURCE_FILES src/*.cpp)

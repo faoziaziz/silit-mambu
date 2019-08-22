@@ -139,7 +139,7 @@ void writeTexttoTable(){
         //OCR_get=AccOCR();
         str_ocr_get=AccOCR();
         cout<<"STR ocr"<<str_ocr_get<<endl;
-        delete[] OCR_get;
+       
         /* Delete File ********************************************************/
         if( remove( "outfile_temp.png" ) != 0 )
           perror( "Error deleting file" );
